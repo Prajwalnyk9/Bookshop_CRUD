@@ -1,0 +1,88 @@
+Book Shop CRUD Project - Instructions
+
+Project Overview
+- Full-stack CRUD application to manage a collection of books.
+- Users can add, view, update, and delete books with title, description, price, and cover image.
+- Built with React (frontend), Node.js/Express (backend), and MySQL (database).
+
+Prerequisites
+- Node.js and npm installed
+- MySQL installed and running
+- (Optional) Git for version control
+
+1. Backend Setup
+- Open a terminal and navigate to the backend folder:
+  cd backend
+- Install dependencies:
+  npm install
+- Configure your MySQL database in backend/index.js (update host, user, password, and database as needed).
+- Start the backend server:
+  npm start
+- The backend will run on http://localhost:8800
+
+2. Frontend Setup
+- Open a new terminal and navigate to the frontend folder:
+  cd frontend
+- Install dependencies:
+  npm install
+- Start the React frontend:
+  npm start
+- The frontend will run on http://localhost:3000
+
+3. Features & Usage
+- Add Book: Click "Add new book" and fill in the details (title, description, price, cover image URL). Live preview of cover image is shown.
+- View Books: All books are listed on the home page with their cover, title, description, and price.
+- Update Book: Click "Update" on any book. The form is pre-filled with current info; you can update only the fields you want.
+- Delete Book: Click "Delete" to remove a book from the list.
+- Book Cover: Use direct image URLs (e.g., from Unsplash or Pexels) for the cover field. Images are shown on both add/update forms and the home page.
+
+4. Notes
+- Make sure your MySQL server is running and accessible.
+- If you want to push to GitHub, initialize git in the root folder and follow standard git commands.
+- If you accidentally made frontend a submodule, remove its .git folder and re-add it to your main repo.
+
+5. References
+- React: https://react.dev/
+- Axios: https://axios-http.com/
+- React Router: https://reactrouter.com/
+- Node.js: https://nodejs.org/en/docs/
+- Express: https://expressjs.com/
+- MySQL: https://dev.mysql.com/doc/
+- Unsplash: https://unsplash.com/
+- Pexels: https://www.pexels.com/
+
+Dependencies & Required Packages
+
+Backend (Node.js/Express)
+- express
+- mysql2
+- cors
+- nodemon (for development, optional)
+
+Install with (in PowerShell):
+cd backend
+npm install express mysql2 cors
+npm install --save-dev nodemon
+
+Frontend (React)
+- react
+- react-dom
+- react-router-dom
+- axios
+- react-scripts (included with Create React App)
+
+Install with (in PowerShell):
+cd frontend
+npm install react react-dom react-router-dom axios
+
+All dependencies are listed in the respective package.json files in the backend and frontend folders.
+
+Project Steps Recap:
+1. Initialized backend and frontend with npm.
+2. Set up MySQL and created a books table.
+3. Built backend API with Express for CRUD operations.
+4. Built React frontend with pages for viewing, adding, and updating books.
+5. Implemented live image preview and price formatting.
+6. Connected frontend and backend using Axios.
+7. Used Git for version control and pushed to GitHub.
+8. Added project instructions and references.
